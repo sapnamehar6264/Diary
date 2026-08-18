@@ -1,0 +1,78 @@
+body {
+   font-family: "Shadows Into Light", cursive;
+   background-color: black;
+}
+
+div {
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+img {
+    height: 760px;
+    margin: auto;
+    max-width: fit-content;
+    grid-area: 1/1;
+}
+
+textarea {
+    width: 360px;
+    height: 448px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 10pt;
+    text-align: left;
+    line-height: 1;
+    padding-top:24px;
+    font-size: 14px;
+    line-height: 27px;
+    overflow: hidden;
+    resize: none;
+
+    grid-area: 1/1;
+
+} 
+
+.date{
+    position: absolute;
+    left:614px;
+    top: 76px;
+    border: none;
+    background: transparent;
+}
+
+.day {
+    position: absolute;
+    left: 614px;
+    top: 112px;
+    border: none;
+    background: transparent;
+}
+
+.prev {
+    position: absolute;
+    left: 666px;
+    top: 30px;
+}
+
+.next {
+    position: absolute;
+    right: 650px;
+    top: 30px;
+}
+
+.savebtn {
+    position: absolute;
+    bottom: 100px;
+    border-radius: 10px;
+    height: 36px;
+    width: 60px;
+}
+
+
+
