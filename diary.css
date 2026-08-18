@@ -74,5 +74,11 @@ textarea {
     width: 60px;
 }
 
+span {
+    position: absolute;
+    top: 30px;
+    right: 950px;
+}
+
 
 
