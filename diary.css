@@ -1,74 +1,80 @@
 body {
-   font-family: "Shadows Into Light", cursive;
-   background-color: black;
+    font-family: "Shadows Into Light", cursive;
+    background-color: black;
+    margin: 0;
+    padding: 20px 0;
 }
 
+/* 1. Shrink div to tightly wrap the image and center it on screen */
 div {
-    height: 100%;
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    place-items: center;
+    width: fit-content;
+    margin: 0 auto;
 }
 
+/* 2. Display image as a block element inside the tight container */
 img {
     height: 760px;
-    margin: auto;
-    max-width: fit-content;
-    grid-area: 1/1;
+    width: auto;
+    display: block;
 }
 
+/* 3. Position elements relative to the notebook image's top-left corner */
 textarea {
+    position: absolute;
+    top: 170px;         /* Distance from top edge of notebook */
+    left: 80px;         /* Distance from left edge of notebook */
     width: 360px;
     height: 448px;
     border: none;
     outline: none;
     background: transparent;
-    font-size: 10pt;
-    text-align: left;
-    line-height: 1;
-    padding-top:24px;
     font-size: 14px;
     line-height: 27px;
     overflow: hidden;
     resize: none;
-
-    grid-area: 1/1;
-
 } 
 
-.date{
+.date {
     position: absolute;
-    left:614px;
     top: 76px;
+    left: 130px;
     border: none;
     background: transparent;
 }
 
 .day {
     position: absolute;
-    left: 614px;
     top: 112px;
+    left: 130px;
     border: none;
     background: transparent;
 }
 
 .prev {
     position: absolute;
-    left: 666px;
     top: 30px;
+    left: 30px;
+}
+
+.prev:disabled {
+  background-color: #ccc; 
+  color: #888;            
+  cursor: not-allowed; 
+  opacity: 0.5;
 }
 
 .next {
     position: absolute;
-    right: 650px;
     top: 30px;
+    right: 30px;
 }
 
 .savebtn {
     position: absolute;
-    bottom: 100px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers save button horizontally */
     border-radius: 10px;
     height: 36px;
     width: 60px;
@@ -77,8 +83,6 @@ textarea {
 span {
     position: absolute;
     top: 30px;
-    right: 950px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers page counter horizontally */
 }
-
-
-

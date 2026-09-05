@@ -16,6 +16,11 @@ function updateUI() {
   document.querySelector(".day").value = activePage.day || "";
   
   pageCounter.textContent = `Page ${currentPage + 1}`;
+  if(currentPage === 0){
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.disabled = false;
+  }
 }
 
 if(localStorage.getItem("diaryData")){
@@ -71,7 +76,7 @@ prevBtn.addEventListener("click", function(){
         pageCounter.textContent = `Page ${currentPage + 1}`;
         
         //Show the previous page's saved text
-        dupdateUI();
+        updateUI();
     } else {
         console.log("Can't go prev anymore! You've reached the starting point");
     }
