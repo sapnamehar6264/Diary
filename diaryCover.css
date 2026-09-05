@@ -1,11 +1,65 @@
-div {
-    height: 100%;
+body {
+    background-color: black;
+    font-family: "Shadows Into Light", cursive;
+    margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-img {
-    height: 760px;
-    margin: auto;
-    max-width: fit-content;
+.cover-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
+
+.journal-cover {
+    position: relative;
+    width: fit-content;
+}
+
+.journal-cover img {
+    height: 760px; /* Adjust height as needed */
+    width: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+#cover-title {
+    position: absolute;
+    width: 50%;           
+    margin-inline: auto; 
+    top: 28%;
+    right: 10%;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    width: 80%;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+#user-name-input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    font-family: inherit;
+}
+
+#open-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    font-family: inherit;
+}
+
