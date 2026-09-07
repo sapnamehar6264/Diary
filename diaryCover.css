@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-border-box;
+}
+
 body {
     background-color: black;
     font-family: "Shadows Into Light", cursive;
@@ -6,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .cover-page {
@@ -21,7 +26,7 @@ body {
 }
 
 .journal-cover img {
-    height: 760px; /* Adjust height as needed */
+    max-height: 80vh;
     width: auto;
     display: block;
     border-radius: 8px;
@@ -29,19 +34,26 @@ body {
 
 #cover-title {
     position: absolute;
-    width: 50%;           
-    margin-inline: auto; 
-    top: 28%;
-    right: 10%;
-    font-size: 24px;
+    top: 30%;                 
+    left: 50%;                
+    transform: translateX(-50%);
+    font-size: 32px;
     text-align: center;
     margin: 0;
-    width: 80%;
+    width: 80%;        
 }
 
 .controls {
+    position: absolute;
+    top: 50%; 
+    left: 73%;
+    transform: translateX(-50%);
+    
     display: flex;
-    gap: 10px;
+    flex-direction: row; 
+    align-items: center;
+    gap: 12px;
+    width: 70%;
 }
 
 #user-name-input {
@@ -62,4 +74,3 @@ body {
     cursor: pointer;
     font-family: inherit;
 }
-

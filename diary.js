@@ -24,14 +24,14 @@ function updateUI() {
 }
 
 if(localStorage.getItem("diaryData")){
-    diaryPages = JSON.parse(localStorage.getItem("diaryData"));
+  diaryPages = JSON.parse(localStorage.getItem("diaryData"));
 }
 
 updateUI();
 
 function saveToLocalStorage() {
-    const word = JSON.stringify(diaryPages);
-    localStorage.setItem("diaryData", word);
+  const word = JSON.stringify(diaryPages);
+  localStorage.setItem("diaryData", word);
 }
 
 data.value = diaryPages[0] || "";

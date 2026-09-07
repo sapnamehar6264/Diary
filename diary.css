@@ -5,25 +5,22 @@ body {
     padding: 20px 0;
 }
 
-/* 1. Shrink div to tightly wrap the image and center it on screen */
 div {
     position: relative;
     width: fit-content;
     margin: 0 auto;
 }
 
-/* 2. Display image as a block element inside the tight container */
 img {
     height: 760px;
     width: auto;
     display: block;
 }
 
-/* 3. Position elements relative to the notebook image's top-left corner */
 textarea {
     position: absolute;
-    top: 170px;         /* Distance from top edge of notebook */
-    left: 80px;         /* Distance from left edge of notebook */
+    top: 170px;         
+    left: 80px;         
     width: 360px;
     height: 448px;
     border: none;
@@ -86,5 +83,5 @@ span {
     position: absolute;
     top: 30px;
     left: 50%;
-    transform: translateX(-50%); /* Centers page counter horizontally */
+    transform: translateX(-50%); 
 }
